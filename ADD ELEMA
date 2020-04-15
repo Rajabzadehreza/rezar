@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    var table = document.createElement("table");
+    table.setAttribute("id", "mytable");
+    document.body.appendChild(table);
+    var tr1 = document.createElement("tr1");
+    var tr2 = document.createElement("tr2");
+    var tr3 = document.createElement("tr3");
+    tr1.setAttribute("id", "mytr1");
+    tr2.setAttribute("id", "mytr2");
+    tr3.setAttribute("id", "mytr3");
+    document.getElementById("mytable").appendChild(tr1);
+    document.getElementById("mytable").appendChild(tr2);
+    document.getElementById("mytable").appendChild(tr3);
+    var td1 = document.createElement("td1");
+    var td2 = document.createElement("td2");
+    var td3 = document.createElement("td3");
+    var td4 = document.createElement("td4");
+    var td5 = document.createElement("td5");
+    var td6 = document.createElement("td6");
+
+    var texttd1 = document.createTextNode("lastName");
+    var texttd2 = document.createTextNode("firstName");
+    var texttd3 = document.createTextNode("Image");
+    td1.appendChild(texttd1);
+    td3.appendChild(texttd2);
+    td5.appendChild(texttd3);
+
+    document.getElementById("mytr1").appendChild(td1);
+    document.getElementById("mytr1").appendChild(td2);
+    document.getElementById("mytr2").appendChild(td3);
+    document.getElementById("mytr2").appendChild(td4);
+    document.getElementById("mytr3").appendChild(td5);
+    document.getElementById("mytr3").appendChild(td6);
+</script>
+
+</html>
